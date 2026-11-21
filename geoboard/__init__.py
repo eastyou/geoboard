@@ -1,0 +1,67 @@
+"""geoboard：A4 可打印几何钉板与面积/周长挑战卡。"""
+
+from __future__ import annotations
+
+from .model import (
+    BOARD_FIRST_TOP_MM,
+    BOARD_MARGIN_MM,
+    BOARD_SECOND_TOP_MM,
+    BOARD_SIDE_MM,
+    BOARD_SINGLE_TOP_MM,
+    BOARDS_PER_PAGE,
+    CHALLENGES,
+    CHALLENGES_PER_PAGE,
+    MAX_BOARDS,
+    MAX_CHALLENGES,
+    MAX_PROMPT_LENGTH,
+    MAX_SIZE,
+    MAX_TITLE_LENGTH,
+    MIN_BOARDS,
+    MIN_CHALLENGES,
+    MIN_SIZE,
+    Board,
+    Challenge,
+    GeoboardError,
+    Options,
+    Peg,
+    board_page_count,
+    build_boards,
+    challenge_page_count,
+    page_count,
+    select_challenges,
+)
+from .render import render_board_svg, render_html
+
+__version__ = "0.1.0"
+
+__all__ = [
+    "BOARD_FIRST_TOP_MM",
+    "BOARD_MARGIN_MM",
+    "BOARD_SECOND_TOP_MM",
+    "BOARD_SIDE_MM",
+    "BOARD_SINGLE_TOP_MM",
+    "BOARDS_PER_PAGE",
+    "CHALLENGES",
+    "CHALLENGES_PER_PAGE",
+    "MAX_BOARDS",
+    "MAX_CHALLENGES",
+    "MAX_PROMPT_LENGTH",
+    "MAX_SIZE",
+    "MAX_TITLE_LENGTH",
+    "MIN_BOARDS",
+    "MIN_CHALLENGES",
+    "MIN_SIZE",
+    "Board",
+    "Challenge",
+    "GeoboardError",
+    "Options",
+    "Peg",
+    "board_page_count",
+    "build_boards",
+    "challenge_page_count",
+    "page_count",
+    "render_board_svg",
+    "render_html",
+    "select_challenges",
+    "__version__",
+]
